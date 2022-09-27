@@ -1,0 +1,22 @@
+.footer{
+    margin-top: 100px;
+    height: 5em;
+    background-color: var(--main-bg-color);
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+.highlight{
+    color: var(--warning-text-color);
+}
+.list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.list > li{
+    display: inline;
+    padding: 1em;
+}

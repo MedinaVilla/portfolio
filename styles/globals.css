@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-y: scroll;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    --main-bg-color: black;
+    --secondary-bg-color: white;
+
+    --primary-color: #EBBB22;
+    --secondary-color: black;
+
+    --primary-text-color: white;
+    --secondary-text-color: black;
+    --warning-text-color:#EBBB22;
+
+    
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

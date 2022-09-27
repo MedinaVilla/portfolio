@@ -1,0 +1,7 @@
+.main {
+  min-height: 100vh;
+}
+
+.header {
+  background-color: var(--main-bg-color);
+}
