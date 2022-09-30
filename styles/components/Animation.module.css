@@ -1,0 +1,87 @@
+.reveal {
+    /* position: relative; */
+    opacity: 0;
+}
+
+.reveal.activeFB {
+    opacity: 1;
+    animation: fadeBottom 0.8s ease-in;
+}
+
+.reveal.activeFL {
+    opacity: 1;
+    animation: fadeLeft 0.8s ease-in;
+}
+
+.reveal.activeFR{
+    opacity: 1;
+    animation: fadeRight 0.8s ease-in;
+}
+
+.reveal.activeFT{
+    opacity: 1;
+    animation: fadeTop 0.8s ease-in;
+}
+
+.reveal.activeFI{
+    opacity: 1;
+    animation: fadeInAnimation ease 1s
+}
+
+
+@keyframes fadeBottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeTop {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}

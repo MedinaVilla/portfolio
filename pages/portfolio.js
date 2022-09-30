@@ -17,13 +17,11 @@ export default function AcercaDe() {
         <meta name="description" content="Te presento mis últimos proyectos que he realizado:" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
 
       <main className={styles.main}>
-
         <div className={styles.wrapper}>
           <div className={styles.image} >
-            <Image layout="fill" src='/twitter_preview.png' alt="medwitter"></Image>
+            <Image layout="fill" src='/twitter_preview.png'  alt="medwitter"></Image>
           </div>
           <div className={styles.content}>
             <h3 align="right" className={styles.subtitle}>Medwitter </h3>
@@ -49,7 +47,7 @@ export default function AcercaDe() {
           </div>
         </div>
 
-        <div className={styles.wrapper}>
+        <div className={styles.wrapperRev}>
           <div className={styles.content}>
             <h3 align="left" className={styles.subtitle}>Medinagram</h3>
             <div className={styles.box}>
@@ -105,7 +103,7 @@ export default function AcercaDe() {
           </div>
         </div>
 
-        <div className={styles.wrapper}>
+        <div className={styles.wrapperRev}>
           <div className={styles.content}>
             <h3 align="left" className={styles.subtitle}>Parras</h3>
             <div className={styles.box}>
@@ -132,7 +130,6 @@ export default function AcercaDe() {
             <Image layout="fill" src='/parras_preview.png' alt="parras" objectFit="contain"></Image>
           </div>
         </div>
-
       </main>
       <Footer/>
     </div>

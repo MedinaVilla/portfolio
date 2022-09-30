@@ -14,7 +14,7 @@ export default function AcercaDe() {
       </Head>
 
       <main className={styles.main}>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className={styles.flexbox}>
           <div className={styles.text}>
             Hola. Soy Jesús Medina, <span className={styles.highlight}>Ing. en Sistemas Computacionales</span> egresado del IPN y soy un apasionado del desarrollo web y desarrollo móvil.<br /><br />
@@ -51,7 +51,7 @@ export default function AcercaDe() {
               </div>
             </div>
           </section>
-
+    <br/>
           <section className={styles.block}>
             <div className={styles.eachYear}>
               <div className={styles.yearTimeLine}>2018</div>

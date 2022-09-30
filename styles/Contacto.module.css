@@ -1,36 +1,40 @@
-.flexbox{
+@media screen and (min-width: 0px) {
+
+  .flexbox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2em;
-}
-
-.title{
+  }
+  
+  .title {
     font-size: 2.5em;
     text-align: center;
     color: var(--warning-text-color);
-}
-
-.subtitle{
+  }
+  
+  .subtitle {
     padding-top: 1em;
     font-size: 1.3em;
     text-align: center;
     font-weight: bold;
-}
-
-.description{
+  }
+  
+  .description {
     text-align: center;
     font-size: 1.2em;
-}
-
-.form{
-    width: 600px;
+  }
+  
+  .form {
+    width: 100%;
     border: 1px solid gray;
     margin: 2em;
     padding: 2em;
-}
-
-.form > input, .form > textarea{
+  }
+  
+  .form>input,
+  .form>textarea {
     width: 100%;
     padding: 0.8em;
     margin: 1em 0;
@@ -38,9 +42,9 @@
     border-bottom: 1px solid gray;
     outline: 0;
     font-size: 1em;
-}
-
-.button_secondary {
+  }
+  
+  .button_secondary {
     margin-top: 1.5em;
     background-color: var(--secondary-color);
     color: var(--primary-text-color);
@@ -58,15 +62,41 @@
     color: var(--secondary-color);
   }
   
-  .logo_container{
+  .logo_container {
     /* width: 300px; */
     display: flex;
     justify-content: center;
   }
-
-  .logo{
+  
+  .logo {
     width: 38px;
     height: 38px;
     position: relative;
     margin: 0 1em;
   }
+
+
+}
+
+@media screen and (min-width: 620px) {}
+
+@media screen and (min-width: 960px) {
+
+  .flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+
+  .form {
+    width: 600px;
+    border: 1px solid gray;
+    margin: 2em;
+    padding: 2em;
+  }
+
+}
+
+@media screen and (min-width: 1320px) {}

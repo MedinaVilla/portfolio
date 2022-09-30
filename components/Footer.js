@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import styles from "./../styles/components/Footer.module.css";
 
@@ -8,18 +9,18 @@ const Footer = () => {
                 2022 Diseñado y construido por  <span className={styles.highlight}>Jesús Medina</span>
             </div>
             <ul className={styles.list}>
-                <li>
+                <Link href="/"><li>
                     Inicio
-                </li>
-                <li>
+                </li></Link>
+                <Link href="/acerca_de"><li >
                     Acerca de
-                </li>
-                <li>
+                </li></Link>
+                <Link href="/portfalio"><li>
                     Portfolio
-                </li>
-                <li>
+                </li></Link>
+                <Link href="/contacto"><li>
                     Contacto
-                </li>
+                </li></Link>
             </ul>
         </footer>
     );

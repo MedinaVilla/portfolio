@@ -1,110 +1,186 @@
-.flexbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5em;
+@media screen and (min-width: 0px) {
+    .main{
 
-    /* border-bottom: 28px solid black; */
-}
+    }
+    .flexbox {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em;
 
-.logo {
-    width: 280px;
-    height: 280px;
-    position: relative;
-}
-
-.logoSchool {
-    width: 64px;
-    height: 64px;
-    position: relative;
-    opacity: 0.2;
-    margin: 0 0.5em;
-}
-
-.text {
-    flex: 1;
-    max-width: 800px;
-    padding-right: 2em;
-
-}
-
-.highlight {
-    font-weight: bold;
-    color: var(--warning-text-color);
-}
-
-
-/* Time line*/
-.wrapper {
-    width: 100%;
-}
-
-.block {
-    z-index: 1;
-    position: relative;
-}
-
-.block:before {
-    content: "";
-    position: absolute;
-    height: calc(100% - 40px);
-    width: 4px;
-    left: 50%;
-    background-color: var(--warning-text-color);
-    margin-top: 90px;
-}
-
-.yearTimeLine {
-    margin-top: 35px;
-    font: bold 42px/52px Open Sans Condensed, sans-serif;
-    text-align: center;
-    padding: 20px;
-    transition: all 0.8s ease-in-out;
-}
-
-.eachEvent {
-    background-color: rgb(35, 33, 31);
-    color: var(--primary-text-color);
-    padding: 25px;
-    margin: 10px 20px;
-    width: 400px;
-    position: relative;
-    border-radius: 4px;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-}
-
-.eachEvent > h3{
-    color: var(--warning-text-color);
+    }
     
+    .flexbox > div {
+        margin: 1em;  transition: all 0.8s;
+    }
+
+    .logo {
+        width: 280px;
+        height: 280px;
+        position: relative;
+    }
+    
+    .logoSchool {
+        width: 64px;
+        height: 64px;
+        position: relative;
+        opacity: 0.2;
+        margin: 0 0.5em;
+    }
+    
+    .text {
+        flex: 1;
+        /* padding: 1em; */
+        max-width: 800px;
+        text-align: center;
+    }
+    
+    .highlight {
+        font-weight: bold;
+        color: var(--warning-text-color);
+    }
+    
+    
+    /* Time line*/
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .block {
+        z-index: 1;
+        position: relative;
+    }
+    
+    .block:before {
+        content: "";
+        position: absolute;
+        height: calc(100% - 40px);
+        width: 4px;
+        left: 5%;
+        background-color: var(--warning-text-color);
+        margin-top: 100px;
+    }
+    
+    .yearTimeLine {
+        margin-top: 35px;
+        font: bold 42px/52px Open Sans Condensed, sans-serif;
+        text-align: center;
+        padding: 20px;
+        transition: all 0.8s ease-in-out;
+    }
+    
+    .eachEvent {
+        background-color: rgb(35, 33, 31);
+        color: var(--primary-text-color);
+        padding: 25px;
+        margin: 10px 20px;
+        max-width: 400px;
+        position: relative;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+    }
+    
+    .eachEvent > h3{
+        color: var(--warning-text-color);
+    }
+    
+    .eachEvent:before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 8px);
+        left: -27px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--secondary-text-color);
+        box-shadow: 0 4px 20px -4px rgba(64, 64, 64, 0.8);
+    }
+    
+    .eachEvent:nth-child(odd) {
+        margin-left: calc(50% + 20px);
+    }
+    
+    .left {
+        margin-left: calc(5% + 20px);
+    }
+    
+    .right {
+        margin-left: calc(5% + 20px);
+    }
+    
+    /* .left:nth-child(even):before {
+        left: calc(5% - 25px);
+    } */
+
 }
 
-.eachEvent:before {
-    content: "";
-    position: absolute;
-    top: calc(50% - 8px);
-    left: -27px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: var(--secondary-text-color);
-    box-shadow: 0 4px 20px -4px rgba(64, 64, 64, 0.8);
+@media screen and (min-width: 620px) {
+
+    
+
+
 }
 
-.eachEvent:nth-child(odd) {
-    margin-left: calc(50% + 20px);
+@media screen and (min-width: 960px) {
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em;
+        /* border-bottom: 28px solid black; */
+    }
+
+    .text {
+        text-align: justify;
+    }
+
+    .block:before {
+        left: 50%;
+    }
+
+    .eachEvent {
+        width: 400px;
+    }
+
+    .eachEvent:before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 8px);
+        left: -27px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--secondary-text-color);
+        box-shadow: 0 4px 20px -4px rgba(64, 64, 64, 0.8);
+    }
+
+
+    .left {
+        margin-left: calc(50% - 420px);
+    }
+
+    .left:nth-child(even):before {
+        left: calc(100% + 14px);
+    }
+
+    .right {
+        margin-left: calc(50% + 20px);
+    }
+    
+    .text {
+        padding: 2em;
+    }
+
 }
 
-.left {
-    margin-left: calc(50% - 421px);
-}
-
-.right {
-    margin-left: calc(50% + 20px);
-}
-
-.left:nth-child(even):before {
-    left: calc(100% + 14px);
+@media screen and (min-width: 1320px) {
+ 
 }
