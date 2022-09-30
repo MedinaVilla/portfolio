@@ -8,11 +8,10 @@
         justify-content: center;
         align-items: center;
         padding: 1.5em;
-
     }
     
     .flexbox > div {
-        margin: 1em;  transition: all 0.8s;
+        /* margin: 1em;  transition: all 0.8s; */
     }
 
     .logo {
@@ -71,7 +70,7 @@
         font: bold 42px/52px Open Sans Condensed, sans-serif;
         text-align: center;
         padding: 20px;
-        transition: all 0.8s ease-in-out;
+        /* transition: all 0.8s ease-in-out; */
     }
     
     .eachEvent {

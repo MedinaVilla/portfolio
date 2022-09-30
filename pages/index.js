@@ -147,16 +147,15 @@ export default function Home() {
                   Dale un vistazo, anda, no seas tímido
                 </p>
                 <div>
-                  <button className={styles.button_secondary}>Ver proyectos</button>
+                  <Link href="/portfolio"><button className={styles.button_secondary}>Ver proyectos</button></Link>
                 </div>
               </div>
-              <div className={styles.preview} >xd
+              <div className={styles.preview} >
                 <Image layout="fill" src='/twitter_preview.png' alt="web_development"></Image>
               </div>
             </div>
           </div>
         </Animation>
-
         <Footer />
       </main >
     </div >

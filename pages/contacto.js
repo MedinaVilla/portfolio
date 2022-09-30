@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Animation from '../components/Animation'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import styles from '../styles/Contacto.module.css'
@@ -16,6 +17,7 @@ export default function Contacto() {
       {/* <Navbar /> */}
 
       <main className={styles.main}>
+        <Animation fadeIn={true}>
         <div className={styles.flexbox}>
           <div>
             <h2 className={styles.title}>Contáctame</h2>
@@ -46,6 +48,7 @@ export default function Contacto() {
             </div>
           </div>
         </div>
+        </Animation>
       </main>
 
       <Footer />
